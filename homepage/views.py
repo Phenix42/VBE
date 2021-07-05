@@ -22,7 +22,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
 imap_url = 'imap.gmail.com'
 conn = imaplib.IMAP4_SSL(imap_url)
-attachment_dir = 'C:/Users/mahender/Desktop/minor'
+attachment_dir = '/home/sunny/Public/VoiceEmail/VoiceEmail/assets'
 
 def texttospeech(text, filename):
     filename = filename + '.mp3'
@@ -128,8 +128,8 @@ def login_view(request):
         passwrd = convert_special_char(passwrd)
 
         imap_url = 'imap.gmail.com'
-        # addr = 'rash2801@gmail.com'
-        # passwrd = 'rashishreya*01'
+        # addr = 'sandeep@greycampus.com'
+        # passwrd = 'Sunnydaniel'
         conn = imaplib.IMAP4_SSL(imap_url)
         try:
             conn.login(addr, passwrd)
