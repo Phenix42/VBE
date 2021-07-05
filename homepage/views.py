@@ -22,7 +22,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
 imap_url = 'imap.gmail.com'
 conn = imaplib.IMAP4_SSL(imap_url)
-attachment_dir = '/home/sunny/Public/VoiceEmail/VoiceEmail/assets'
+attachment_dir = '/home/sunny/Public/VoiceEmail/VoiceEmail/assets/'
 
 def texttospeech(text, filename):
     filename = filename + '.mp3'
